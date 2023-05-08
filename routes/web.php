@@ -23,27 +23,29 @@ Route::get('/', function () {
     ];
 
     $links = [
-        '/about',
-        '/contacts',
-        '/download',
-        '/content'
+        'about',
+        'contacts',
+        'download',
+        'content'
     ];
+
+
 
     return view('home', compact('listaSpesa', 'links'));
 });
 
 Route::get('/about', function () {
     return view('about');
-});
+})->name('about');
 
 Route::get('/contacts', function () {
     return view('contacts');
-});
+})->name('contacts');;
 
 Route::get('/download', function () {
     return view('download');
-});
+})->name('download');;
 
 Route::get('/content', function () {
     return view('content');
-});
+})->name('content');;
