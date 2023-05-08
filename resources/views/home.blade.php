@@ -8,10 +8,22 @@
 </head>
 <body>
     <h1>Hello World</h1>
+<header>
+    <nav class='nav'>
+<ul>
+    @foreach ($links as $index => $item)
+    <li><a href="{{ $links[$index] }}">{{ $item }}</a></li>
+    @endforeach
+</ul>
+    </nav>
+</header>
+    <hr>
     <ul>
         @foreach ($listaSpesa as $elementoSpesa)
         <li>{{ $elementoSpesa }}</li>
         @endforeach
     </ul>
+
+
 </body>
 </html>

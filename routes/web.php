@@ -22,5 +22,28 @@ Route::get('/', function () {
         'Latte'
     ];
 
-    return view('home', compact('listaSpesa'));
+    $links = [
+        '/about',
+        '/contacts',
+        '/download',
+        '/content'
+    ];
+
+    return view('home', compact('listaSpesa', 'links'));
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+
+Route::get('/download', function () {
+    return view('download');
+});
+
+Route::get('/content', function () {
+    return view('content');
 });
