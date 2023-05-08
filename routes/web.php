@@ -40,12 +40,12 @@ Route::get('/about', function () {
 
 Route::get('/contacts', function () {
     return view('contacts');
-})->name('contacts');;
+})->name('contacts');
 
 Route::get('/download', function () {
     return view('download');
-})->name('download');;
+})->name('download');
 
 Route::get('/content', function () {
     return view('content');
-})->name('content');;
+})->name('content');
