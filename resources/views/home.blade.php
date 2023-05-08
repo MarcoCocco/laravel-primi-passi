@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>Hello World</h1>
+    <ul>
+        @foreach ($listaSpesa as $elementoSpesa)
+        <li>{{ $elementoSpesa }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>

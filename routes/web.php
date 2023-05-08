@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $listaSpesa = [
+        'Pane',
+        'Acqua',
+        'Pasta',
+        'Uova',
+        'Latte'
+    ];
+
+    return view('home', compact('listaSpesa'));
 });
